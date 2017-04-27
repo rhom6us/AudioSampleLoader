@@ -1,0 +1,24 @@
+{
+  "name": "audio-sample-loader",
+  "version": "1.0.0",
+  "description": "A utility class, similar in usage to XMLHttpRequest Level 2, which accepts URL(s) to sound file(s) and writes the resulting decoded AudioBuffer(s) to its \"response\" attribute (or a list/array of AudioBuffers if the urls are a list/array of strings).",
+  "main": "AudioSampleLoader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhom6us/AudioSampleLoader.git"
+  },
+  "keywords": [
+    "Web",
+    "Audio",
+    "Api"
+  ],
+  "author": "Thomas Butler",
+  "license": "APACHE",
+  "bugs": {
+    "url": "https://github.com/rhom6us/AudioSampleLoader/issues"
+  },
+  "homepage": "https://github.com/rhom6us/AudioSampleLoader#readme"
+}
