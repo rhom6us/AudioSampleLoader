@@ -1,28 +1,38 @@
-const path = require('path');
+'use strict';
+
+let BabiliPlugin = require("babili-webpack-plugin");
+let path = require('path');
+
 module.exports = {
-  entry: './src/AudioSampleLoader.js',
+  entry:{
+    fu: './src/index.ts'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [{
-      test: /.jsx?$/,
-      include: [
-        path.resolve(__dirname, 'app')
-      ],
+      test: /.tsx?$/,
       exclude: [
         path.resolve(__dirname, 'node_modules'),
         path.resolve(__dirname, 'bower_components')
       ],
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015']
+      use: {
+        loader: 'awesome-typescript-loader',
+        options: {}
       }
     }]
   },
+  plugins: [
+  //  new BabiliPlugin()
+  ],
   resolve: {
-    extensions: ['.json', '.js', '.jsx', '.css']
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'src')
+    ],
+    extensions: ['.ts', 'tsx', '.json', '.js', '.jsx', '.css']
   },
   devtool: 'source-map'
 };

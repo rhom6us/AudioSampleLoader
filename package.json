@@ -1,24 +1,32 @@
 {
   "name": "audio-sample-loader",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "A utility class, similar in usage to XMLHttpRequest Level 2, which accepts URL(s) to sound file(s) and writes the resulting decoded AudioBuffer(s) to its \"response\" attribute (or a list/array of AudioBuffers if the urls are a list/array of strings).",
-  "main": "AudioSampleLoader.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Thomas Butler",
+  "homepage": "https://github.com/rhom6us/AudioSampleLoader#readme",
+  "license": "APACHE",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rhom6us/AudioSampleLoader.git"
+    "url": "https://github.com/rhom6us/AudioSampleLoader"
+  },
+  "bugs": {
+    "url": "https://github.com/rhom6us/AudioSampleLoader/issues"
   },
   "keywords": [
     "Web",
     "Audio",
     "Api"
   ],
-  "author": "Thomas Butler",
-  "license": "APACHE",
-  "bugs": {
-    "url": "https://github.com/rhom6us/AudioSampleLoader/issues"
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/rhom6us/AudioSampleLoader#readme"
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "babili": "0.0.12",
+    "babili-webpack-plugin": "0.0.11",
+    "typescript": "^2.3.1",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {}
 }
